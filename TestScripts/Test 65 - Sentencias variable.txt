@@ -1,0 +1,7 @@
+﻿%p Contenido de la variable $Variable
+
+%p Contenido de la variable $Variable->$Miembro
+
+%p Contenido de la variable $Variable[250 + 32]->$OtroMiembro
+
+%p Contenido de la variable $Variable[250 + $a[2]->$b[3 + 5]->$c]->$OtroMiembro[$d]

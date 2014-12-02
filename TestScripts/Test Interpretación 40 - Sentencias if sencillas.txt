@@ -1,0 +1,55 @@
+﻿%p Prueba con if
+
+<%
+let $a = 7 
+let $b = 3
+if $a>3%>
+	%p Esta es la parte if
+	%p Con dos párrafos
+<%else%>
+	%p Esta #b es la parte # else
+
+<% if $a < 3 %>
+	%p Esta parte no debería salir si $a < 3
+	%p No tiene sentencias else
+
+%p antes del a < 5
+
+<%if $a < 5 %>
+	%p La parte if no debería salir
+<%else %>
+	%p Pero sí la parte else
+	%p Aunque con dos párrafos
+	<!-- y esto un comentario -->
+	%table
+		%tr
+			%td y una tabla
+		%tr
+			<% if $b == 3 %>
+				%td la celda del if b==3
+			%td con dos celdas
+
+%p Antes del a > 5 y b == 3
+
+<%if $a > 5 && $b == 3 %>
+	%p Esta parte if sí debería salir
+	%ol
+		%li con una lista
+		%li numerada
+	%table
+		%tr
+			%td y una tabla
+			%td con dos celdas
+		%tr
+			%td { colspan = "2" style="text-align:center;" } y un span
+
+
+%p Prueba de una lista con un if
+
+%ol
+	%li Primer elemento de la lista
+	<% if $a > 3 %>
+		%li Un elemento de la lista para a > 3
+	%li Ultimo elemento de la lista
+
+%p y un párrafo final

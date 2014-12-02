@@ -1,0 +1,20 @@
+﻿%p Prueba con while
+
+<%
+	let $a = 0
+	while $a < 3
+		let $a = $a+  1
+%>
+	%p El valor de a es $a
+
+%p Un bucle infinito:
+
+<%
+	let $a = 0
+	while $a < 3
+		let $a = $a -  1
+%>
+	%p El valor de a en el bucle infinito es $a
+
+
+%p y un párrafo final

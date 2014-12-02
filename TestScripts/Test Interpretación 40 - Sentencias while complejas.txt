@@ -1,0 +1,29 @@
+﻿%p Prueba con while
+
+<%
+	let $a = 0
+	while $a < 3
+		let $a = $a+  1
+%>
+	%p El valor de a es $a
+
+%p Un bucle infinito:
+
+<%
+	let $a = 0
+	while $a < 3
+		let $a = $a -  1%>
+		%p El valor de a en el bucle infinito es $a
+
+%p El valor de a después del bucle infinito es $a
+
+<%
+	let $a = 0
+	while $a < 20 %>
+		%p El valor de a $a antes de incrementar
+		<% let $a = $a + 1 %>
+		%p El valor de a $a después de incrementar
+		<%if $a == 10 %>
+			%p El valor de a es 10: $a
+
+%p y un párrafo final

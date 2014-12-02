@@ -1,0 +1,11 @@
+﻿%p Prueba de código
+
+<% let $a = 5%>
+
+<%let $a = $a  + (3 + 4) %>
+
+<%let $a = $a  + (3 + 4) * $b[$c + 5]->a + (5 * $b) %>
+
+
+
+%p Final de la prueba

@@ -1,0 +1,16 @@
+﻿%p Prueba con atributos
+
+<%
+	let $url = "http://www.microsoft.com"
+	let $b = 5
+%>
+
+%p { href = "www.microsoft.com"} El texto
+
+%p { href = "www.microsoft.com" target = "blank" } El texto con target
+
+<% if $b != 3 %>
+	%p { href = $url } La url de la variable
+
+<% if $c != "null" %>
+	%p { href = $url } Indefinido

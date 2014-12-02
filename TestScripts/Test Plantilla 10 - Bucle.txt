@@ -1,0 +1,25 @@
+﻿<%
+	let $UrlPage[1] = "Url 1"
+	let $TitlePage[1] = "Title 1"
+	let $ContentPage[1] = "Content 1"
+
+	let $UrlPage[2] = "Url 2"
+	let $TitlePage[2] = "Title 2"
+	let $ContentPage[2] = "Content 2"
+
+	let $UrlPage[3] = "Url 3"
+	let $TitlePage[3] = "Title 3"
+	let $ContentPage[3] = "Content 3"
+
+%>
+
+%a { href = $UrlPage[1] } La url
+
+%div
+	<% for $intIndex = 1 to 20 %>
+		<% if $UrlPage[$intIndex] != "null" %>
+			%div
+				%h1 
+					%a { href = $UrlPage[$intIndex] } $TitlePage[$intIndex]
+				%div
+					$ContentPage[$intIndex]

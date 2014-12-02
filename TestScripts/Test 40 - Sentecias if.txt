@@ -1,0 +1,36 @@
+﻿%p Prueba con if
+
+<%
+	let $a = 3
+	let $b = 5
+%>
+
+<%if $a>3%>
+	%p Esta es la parte if
+<%else%>
+	%p Esta #b es la parte # else
+
+
+<%if $a<5 && $b >= 3 %>
+	%p Sólo parte if
+	%p Aunque con dos párrafos
+	%table
+		%tr
+			%td y una tabla
+		%tr
+			%td con dos celdas
+
+
+<% if $a < 5 && $b > 3
+	let $a = 7
+    else
+	if $a < 4
+		let $b = 5
+%>
+
+
+<% if $a < 5 && $b > 3
+	let $a = 7
+%>
+
+%p y un párrafo final

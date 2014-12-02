@@ -1,0 +1,7 @@
+﻿%p Prueba de comentario
+
+<!-- 
+	Aquí viene un comentario 
+-->
+
+%p Final del comentario

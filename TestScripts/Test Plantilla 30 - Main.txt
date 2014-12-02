@@ -1,0 +1,189 @@
+﻿<%code%>
+<!DOCTYPE html>
+<%end%>
+%html {lang="es"}
+	%head
+		%title $Title
+		%meta { content="text/html; charset=utf-8" http-equiv="Content-Type" }
+		%meta { name="viewport" content="width=device-width, initial-scale=1.0" }
+		%meta { name = "revisit-after" content = "2 days"}
+		%meta { name = "robots" content = "index,follow"}
+		%meta { name = "publisher" content = $Publisher }
+		%meta { name = "copyright" content = "Creative Commons"}
+		%meta { name = "author" content = $Author }
+		%meta { name = "distribution" content ="global"}
+		%meta { name = "description" content = $Description }
+		%meta { name = "keywords" content = $Keywords }
+		%meta { name = "Content-Type" content = "Content-Type: text/html; charset=utf-8" }
+		%meta { name = "generator" content = "DocWriter" }
+		%meta { name="lang" content="es" }
+		%meta { name="siteinfo" content="robots.txt" }
+		
+		%rem Estilos
+		%link { href="Styles\BootStrap\css\bootstrap.min.css" rel="stylesheet" }
+		%link { href="Styles\BootStrap\css\bootstrap-responsive.css" rel="stylesheet" }
+		%link { href="Styles\LayoutFixed.css" rel="stylesheet" }
+		
+		%rem Iconos
+		%link { rel="apple-touch-icon-precomposed" sizes="144x144" href="Styles\BootStrap\ico\apple-touch-icon-144-precomposed.png" }
+		%link { rel="apple-touch-icon-precomposed" sizes="114x114" href="Styles\BootStrap\ico\apple-touch-icon-114-precomposed.png" }
+		%link { rel="apple-touch-icon-precomposed" sizes="72x72" href="Styles\BootStrap\ico\apple-touch-icon-72-precomposed.png" }
+		%link { rel="apple-touch-icon-precomposed" href="Styles\BootStrap\ico\apple-touch-icon-57-precomposed.png" }
+
+		<%code%>
+			<!-- Script de Google Analytics -->
+		<%end%>
+		
+	%body
+		
+		%div { class="container" }
+			%rem Cabecera
+			%header
+				%nav
+					%div { class = "row" }
+						%div { class = "span12" }
+							%div { class="navbar navbar-fixed-top" }
+								%div { class="navbar-inner" }
+									%div { class="container" }
+										%a { class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" } 
+											%span { class="icon-bar" }
+											%span { class="icon-bar" }
+											%span { class="icon-bar" }
+										%a { class="brand" href="index" } CoolWebs
+										%div { class="btn-group pull-right" }
+											%a {href="About" rel="nofollow"} #img {src="Images\Suscriptions\32px\email.png" alt="eMail"} #
+											%a {href="http://www.twitter.com/CoolWebsMaster" rel="nofollow" target="_blank"} #img {src="Images\Suscriptions\32px\twitter.png" alt="Síganos en Twitter"} #
+											%a {href="http://feeds.feedburner.com/Cool-Webs" rel="nofollow" target="_blank"} #img {src="Images\Suscriptions\32px\rss.png" alt="Suscripción RSS"} #
+										%div { class="nav-collapse" }
+											%ul { class="nav" }
+												%li { class="active" } #a { href="index" } Inicio #
+												%li #a { href="Noticias" } Noticias #
+												%li #a { href="Aplicaciones" } Aplicaciones #
+												%li #a { href="Artículos" } Artículos #
+												%li {class="dropdown"}
+													%a { href="Manuales" class="dropdown-toggle" data-toggle="dropdown" } Manuales
+														<%code%>
+															<b class="caret"></b>
+														<%end%>
+														%ul {class="dropdown-menu"}
+															%li #a { href="Manuales\Facebook" } Facebook #
+															%li #a { href="Manuales\Windows" } Windows #
+												%li #a { href="Trucos" } Trucos #
+
+			%section
+				%div { class = "row" style="margin:0; padding:0;"}
+					$AdvText728x90
+			
+				%div { class="row" }
+						
+					%div { class="span9"}
+						&MainColumn
+							<!-- google_ad_section_start -->
+							<%if $Content != "" %>
+								%div
+									$Content
+							
+							<%if $AditionalContent != "" %>
+								%div
+									$AditionalContent
+							
+							<!-- google_ad_section_end -->
+							
+							<%if ($PreviousPage + $NextPage + $TopPage) != "" %>
+								%br
+								
+								%ul { class="pager" }
+									<%if $PreviousPage != "" %>
+										%li « $PreviousPage
+									<%if $TopPage != "" %>
+										%li $TopPage
+									<%if $NextPage != "" %>
+										%li $NextPage »
+	
+								%br
+
+					%div { class="span3" }
+						&AsideColumn
+							%aside
+								%nav { style= "padding-left:5px; padding-right:5px; padding-top:5px;" }
+									%ul { class="nav nav-tabs nav-stacked" }
+										%li #a { href="Tags\Noticias"} NOTICIAS #  
+										%li #a { href="Tags\Noticias\Artículos" } Artículos #
+										%li #a { href="Tags\Noticias\Comparativas" } Comparativas #
+										%li #a { href="Tags\Trucos" } Trucos #
+										
+										%li #a { href="Tags\Manuales"} MANUALES #  
+										%li #a { href="Tags\Manuales\Facebook" } Facebook #
+										%li #a { href="Tags\Manuales\Windows" } Windows #
+										
+										%li #a { href="Tags\Redes sociales"} REDES SOCIALES #  
+										%li #a { href="Tags\Redes sociales\Facebook" } Facebook #
+										%li #a { href="Tags\Redes sociales\Twitter" } Twitter #
+										%li #a { href="Tags\Redes sociales\YouTube" } YouTube #
+										
+										%li #a { href="Tags\Software libre"} SOFTWARE LIBRE #  
+										
+										%li #a { href="Tags\Varios"} VARIOS #  
+										%li #a { href="Tags\Varios\Aplicaciones" } Aplicaciones #
+										%li #a { href="Tags\Varios\Fondos" } Fondos de pantalla #
+										%li #a { href="Tags\Varios\Ganar dinero" } Ganar dinero #
+
+							%br
+							
+							%aside
+								%img {src="Images\Logo.jpg" alt="Logo de CoolWeb"}
+								%div
+									$AdvText160x600
+								
+				%hr
+			
+			%footer 
+				%div { class="row" }
+					<%if $News != "" %>
+						%aside { class="span4" }
+							$News	
+						
+					%aside { class="span4" }
+						%nav { style= "padding-left:5px;padding-right:5px;" }
+							%ul { class="nav nav-tabs nav-stacked" }
+								%li #h1 { class = "label-info" } Palabras clave #
+								%li #a {href="Manuales\Facebook" } Manual de Facebook # 
+								%li #a {href="Manuales\Windows" } Manual de Windows # 
+								%li #a {href="Artículos" } Artículos # 
+								%li #a {href="Aplicaciones\Fondos pantalla"} Fondos de pantalla, fondos de escritorio, wallpapers #
+							
+					%aside { class="span4" }
+						%nav { style= "padding-left:5px;padding-right:5px;" }
+							%ul { class="nav nav-tabs nav-stacked" }
+								%li #h1 { class = "label-info" } Webs amigas #
+								%li #a {href="http://ant2e6.webs-interesantes.es" target="_blank" } Ant2e6 + 1 # 
+								%li #a { href = "http://www.mundotabletspain.com/" target = "_blank" } Mundo tablet #
+								%li #a {href="http://fondospantalla.webs-interesantes.es" target="_blank" } Fondos de pantalla # 
+								%li #a {href="http://imagengraciosa.es" target="_blank" } Imágenes graciosas #
+								%li #a {href="http://tonosmovil.webs-interesantes.es" target="_blank" } Tonos para móvil #
+								%li #a { href = "http://fondosandroid.mundotabletspain.com/" target = "_blank" } Fondos pantalla smartphones y tablets #
+
+				%br
+
+	%br
+	%br
+	
+	%footer
+		%div { class = "row alert" style = "text-align: center; " }
+			%p #small Cualquier pregunta o sugerencia no dude en ponerse en #a {rel="nofollow" href="About"} contacto # conmigo. #
+			%p #small © Bau Consultors. Todos los derechos reservados. #a {href="About\Aviso legal" } Aviso legal # #
+	
+		%rem Se coloca al final de la página para que se cargue más rápido
+		%script { src="Styles\BootStrap\js\jquery.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-transition.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-alert.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-modal.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-dropdown.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-scrollspy.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-tab.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-tooltip.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-popover.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-button.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-collapse.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-carousel.js" }
+		%script { src="Styles\BootStrap\js\bootstrap-typeahead.js" }

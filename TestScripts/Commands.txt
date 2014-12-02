@@ -1,0 +1,19 @@
+﻿%p En un lugar #a {href="de la\mancha.html"} mancha # de cuyo nombre no quiero
+	acordarme.
+
+%p No ha mucho tiempo que vivía #b un caballero # de los de #i lanza en ristre#.
+
+%p Y vivía #b a que #i no sabes # donde # vivía.
+
+%ol
+	%li en una casa
+	%li en un chalet
+	%li en medio del monte
+
+<!-- Y esto es un comentario -->
+
+%p Y esto es más código
+
+&Clase Una clase de div
+
+·id Un id de div

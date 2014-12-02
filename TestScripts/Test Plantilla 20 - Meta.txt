@@ -1,0 +1,20 @@
+﻿<%code%>
+<!DOCTYPE html>
+<%end%>
+%html {lang="es"}
+	%head
+		%title $Title
+		%meta { content="text/html; charset=utf-8" http-equiv="Content-Type" }
+		%meta { name="viewport" content="width=device-width, initial-scale=1.0" }
+		%meta { name = "revisit-after" content = "2 days"}
+		%meta { name = "robots" content = "index,follow"}
+		%meta { name = "publisher" content = $Publisher }
+		%meta { name = "copyright" content = "Creative Commons"}
+		%meta { name = "author" content = $Author }
+		%meta { name = "distribution" content ="global"}
+		%meta { name = "description" content = $Description }
+		%meta { name = "keywords" content = $Keywords }
+		%meta { name = "Content-Type" content = "Content-Type: text/html; charset=utf-8" }
+		%meta { name = "generator" content = "DocWriter" }
+		%meta { name="lang" content="es" }
+		%meta { name="siteinfo" content="robots.txt" }

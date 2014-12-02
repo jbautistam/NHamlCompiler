@@ -1,0 +1,17 @@
+﻿%p Prueba del for
+
+<% for $a = 1 to 10 step 1 %>
+	%p Valor de a = $a
+
+%p Segundo bucle:
+
+<% for $a = 5 to 7 step 2 %>
+	%p Valor de a = $a
+
+
+%p Tercer bucle:
+
+<% for $a = 3 to 5 %>
+	%p Valor de a = $a
+
+%p Fin de la prueba del for

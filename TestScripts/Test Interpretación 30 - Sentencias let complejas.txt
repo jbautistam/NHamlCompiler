@@ -1,0 +1,35 @@
+﻿%p Prueba de código
+
+<% let $a = 5%>
+
+<%let $a = $a + 5 %>
+
+%p El valor de a es $a
+
+<%let $b = $a + 2 %>
+
+%p El valor de b es $b
+
+<%let $c = $a + $b - 5 %>
+
+%p El valor de c es $c
+
+<%let $d[1] = 7%>
+
+<%let $d[1] = $d[1] + 2 %>
+
+<%let $d[2] = $d[1] + 5 %>
+
+%p El valor de d[1] es $d[1] y el de d[2] es $d[2]
+
+<% let $Cliente->Nombre = "Nombre" %>
+<% let $Cliente->Apellido = "Apellido" %>
+<% let $Cliente->NombreCompleto = $Cliente->Nombre + " " + $Cliente->Apellido %>
+
+%p Nombre: $Cliente->Nombre
+
+%p Apellido: $Cliente->Apellido
+
+%p Nombre completo: $Cliente->NombreCompleto
+
+%p Final de la prueba

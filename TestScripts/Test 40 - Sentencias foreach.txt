@@ -1,0 +1,13 @@
+﻿%p Prueba de foreach
+
+<%foreach $a in $listA%>
+	%p Párrafos dentro del foreach
+	%p segundo párrafo
+<%end%>
+
+<%foreach $a in $listA
+	foreach $b in $listB
+	end
+end%>
+
+%p Final de la prueba

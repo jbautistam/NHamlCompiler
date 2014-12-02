@@ -1,0 +1,29 @@
+﻿%ul
+	%li Primero
+	%li Segundo #b con negrita #
+
+%table
+	%tr
+		%td
+			Celda 1.1
+		%td
+			Celda 1.2
+	%tr
+		%td
+			%ol
+				%li Celda 2-1-1
+				%li Celda 2-1-2
+		%td Celda 2.2
+	%tr
+		%td Celda 3.1
+		%td Celda 3.2
+
+%p Segundo párrafo #b con negrita #i y cursiva # combinados # con más texto.
+
+%p Tercer párrafo #a{href="index/categories.html"}hipervínculo # con un hipervínculo #img {src="imagen.jpg" alt="Una imagen"} #
+
+%p Un #a {href = "index.htm"} #img { src="image.jpg"} # hipervínculo # con una imagen.
+
+%p {class="red"} Cuarto párrafo con #b atributos # y #b sentencias #i internas # combinadas# con mucho texto.
+
+%img {src="image.jpg"}

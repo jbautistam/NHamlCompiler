@@ -1,0 +1,10 @@
+﻿%p Prueba de código
+
+<%code%>
+	if (a<3)
+		print a;
+	else
+		print b;
+<%end%>
+
+%p Final de la prueba
