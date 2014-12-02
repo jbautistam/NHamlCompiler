@@ -84,7 +84,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Common\LibHelper\LibHelper.csproj">
+    <ProjectReference Include="..\LibHelper\LibHelper.csproj">
       <Project>{D9E2DC6B-3E54-421F-9231-A4F3A799BC4C}</Project>
       <Name>LibHelper</Name>
     </ProjectReference>
